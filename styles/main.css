@@ -1,0 +1,375 @@
+/*
+ * Web Starter Kit
+ *
+ * Multi-screen layout styles for your page. Brought to you by the
+ * Web Starter Kit team.
+ *
+ */
+
+ html,
+ body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: 'Roboto Condensed', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+  background-color: #D7EBF4;
+  box-sizing: border-box;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.clear{
+  clear:both;
+}
+
+.load_screen{
+  height: 100%;
+  width: 100%;
+  background: #D7EBF4;
+  position: absolute;
+  z-index:7;
+}
+
+.img-animation{
+  position: absolute;
+  
+}
+
+.img-animation--continent{
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  width:54%;
+}
+
+.img-animation--atomium{
+  bottom: 5%;
+  right: 40%;
+  z-index: 5;
+  width:8%;
+}
+
+.img-animation--tree{
+  bottom: 10%;
+  right: 32%;
+  z-index: 5;
+  width:5.05%;
+}
+
+.img-animation--eiffel_tower{
+  bottom: 8.2%;
+  right: 18%;
+  z-index: 5;
+  width:11.65%;
+}
+
+.img-animation--tree_2{
+  bottom: 6%;
+  right: 11%;
+  z-index: 5;
+  width:4.571%;
+}
+
+.img-animation--tree_3{
+  bottom: 6%;
+  right: 9%;
+  z-index: 5;
+  width:3.125%;
+}
+
+.img-animation--mountain{
+  bottom: -20%;
+  right: 1%;
+  z-index: 4;
+  width:22.018%;
+  transform:rotate(17deg);
+  -webkit-transform:rotate(17deg); /* Opera, Chrome, and Safari */
+  -webkit-animation: assembly--mountain 1s; /* Chrome, Safari, Opera */
+  animation: assembly--mountain 1s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+
+
+}
+
+@-webkit-keyframes assembly--mountain{
+  0% {bottom: -20%;}
+  100% {bottom: 9%;}
+}
+
+.img-animation--ocean_1{
+  bottom: -4%;
+  left: 0;
+  z-index: 4;
+  width:56.4%;
+  -webkit-animation: ocean 5s; /* Chrome, Safari, Opera */
+  animation: ocean 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes ocean {
+  0% {left: 0;bottom: -3%;}
+  10% {bottom: -2%;}
+  20% {bottom: -3%;}
+  30% {bottom: -2%;}
+  40% {bottom: -3%;}
+  50% {left: -2%;bottom: -2%;}
+  60% {bottom: -3%;}
+  70% {bottom: -2%;}
+  80% {bottom: -3%;}
+  90% {bottom: -2%;}
+  100% {left: 0;bottom: -3%;}
+}
+
+
+/* Standard syntax */
+@keyframes ocean {
+ 0% {left: 0;}
+ 50% {left: -2%;}
+ 100% {left: 0;}
+}
+
+
+.img-animation--ireland{
+  bottom: 2%;
+  left: 2%;
+  z-index: 3;
+  width: 24.4%;
+}
+
+.img-animation--castle{
+  bottom:9%;
+  left: 7%;
+  z-index: 4;
+  width: 13.25%;
+}
+
+.img-animation--ocean_2{
+  bottom: 2%;
+  left: -2%;
+  z-index: 2;
+  width:56.85%;
+  -webkit-animation: ocean2 5s; /* Chrome, Safari, Opera */
+  animation: ocean2 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes ocean2 {
+  0% {left: -2%;bottom: 0;}
+  10% {bottom: 1%;}
+  20% {bottom: 0;}
+  30% {bottom: 1%;}
+  40% {bottom: 0;}
+  50% {left: 0;bottom: 1%;}
+  60% {bottom: 0;}
+  70% {bottom: 1%;}
+  80% {bottom: 0;}
+  90% {bottom: 1%;}
+  100% {left: -2%;bottom: 0;}
+}
+
+.img-animation--england{
+  bottom: 6%;
+  left: 25%;
+  z-index: 1;
+  width: 25%;
+}
+
+.img-animation--bigben{
+  bottom: 12%;
+  left: 34%;
+  z-index: 1;
+  width: 5.9%;
+}
+
+.img-animation--balloon{
+  bottom: 48%;
+  left: 12%;
+  z-index: 1;
+  width: 7.1%;
+  -webkit-animation: balloon1 30s; /* Chrome, Safari, Opera */
+  animation: balloon1 30s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes balloon1 {
+  0% {left: 12%;bottom:48%;}
+  25% {left: 10%;bottom:46%;}
+  50% {left: 12%;bottom:48%;}
+  75% {left: 14%;bottom:46%;}
+}
+
+.img-animation--balloon2{
+  top: 18%;
+  right: 12%;
+  z-index: 1;
+  width: 8.1%;
+  -webkit-animation: balloon2 30s; /* Chrome, Safari, Opera */
+  animation: balloon2 30s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes balloon2 {
+  0% {right: 12%;top:18%;}
+  1% {top:17.8%;}
+
+  3% {top:18%;}
+
+  5% {top:17.6%;}
+
+  7% {top:18%;}
+  9% {top:17.6%;}
+
+  11% {top:18%;}
+
+  13% {top:17.6%;}
+
+  15% {top:18%;}
+
+  17% {top:17.6%;}
+
+  19% {top:18%;}
+
+  21% {top:17.6%;}
+
+  23% {top:18%;}
+
+  25% {top:17.6%;}
+
+  27% {top:18%;}
+  
+  29% {top:17.6%;}
+
+  31% {top:18%;}
+  
+  33% {top:17.6%;}
+
+  35% {top:18%;}
+
+  37% {top:17.6%;}
+
+  39% {top:18%;}
+  
+  41% {top:17.6%;}
+
+  43% {top:18%;}
+  
+  45% {top:17.6%;}
+
+  47% {top:18%;}
+
+  50% {right: 3%;top:17.8%;}
+
+  51% {top:17.8%;}
+
+  53% {top:18%;}
+
+  55% {top:17.6%;}
+
+  57% {top:18%;}
+  59% {top:17.6%;}
+
+  61% {top:18%;}
+
+  63% {top:17.6%;}
+
+  65% {top:18%;}
+
+  67% {top:17.6%;}
+
+  69% {top:18%;}
+
+  71% {top:17.6%;}
+
+  73% {top:18%;}
+
+  75% {top:17.6%;}
+
+  77% {top:18%;}
+  
+  79% {top:17.6%;}
+
+  81% {top:18%;}
+  
+  83% {top:17.6%;}
+
+  85% {top:18%;}
+
+  87% {top:17.6%;}
+
+  89% {top:18%;}
+  
+  91% {top:17.6%;}
+
+  93% {top:18%;}
+
+  95% {top:17.6%;}
+
+  97% {top:18%;}
+
+  100% {right: 12%;top:18%;}
+}
+
+
+.text{
+  position: absolute;
+  top:15%;
+  left:20%;
+  z-index:6;
+}
+
+.greetings_text{
+  font-family: 'Lobster';
+  font-size: 134px;
+  vertical-align: baseline;
+  line-height: 170px;
+  color: white;
+
+}
+
+.greetings_text span{
+  display: block;
+  float: left;
+  position:relative;
+  text-align: center;
+}
+
+.name_text{
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 54px;
+  float:right;
+}
+.name_text span{
+  color: #EF504F;
+  text-shadow: 0 2px #A33736;
+  display: block;
+  float: left;
+  position:relative;
+  text-align: center;
+  margin:0;
+}
+
+
+.greetings_text-letter{
+}
+
+
+
