@@ -1,7 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Dosis|Lobster);
+@import 'components/colors';
+@import 'components/animation_variables';
+@import 'components/normalize';
 
- html,
- body {
+
+@import url(http://fonts.googleapis.com/css?family=Dosis|Lobster);
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -12,466 +16,184 @@ body {
   position: relative;
   font-family: 'Roboto Condensed', 'Helvetica', 'Arial', sans-serif;
   font-weight: 300;
-  background-color: #D7EBF4;
+  background-color: $blue-sky-medium;
   box-sizing: border-box;
   overflow: hidden;
   min-height: 100%;
 }
 
-.clear{
-  clear:both;
+.clear {
+  clear: both;
 }
 
-.load_screen{
+.load_screen {
   height: 100%;
   width: 100%;
-  background: #D7EBF4;
+  background: $blue-sky-medium;
   position: absolute;
-  z-index:7;
+  z-index: 7;
 }
 
-.img-animation{
+.img-animation {
   position: absolute;
-  
 }
 
-.img-animation--continent{
+.img-animation--continent {
   bottom: -20%;
   right: 0;
   z-index: 5;
-  width:54%;
-  -webkit-animation: assembly--continent 1s 1s forwards; 
-  animation: assembly--continent 1s 1s forwards; 
+  width: 54%;
 }
 
-@-webkit-keyframes assembly--continent{
-  0% {bottom: -20%;}
-  100% {bottom: 0;}
-}
-
-.img-animation--atomium{
+.img-animation--atomium {
   bottom: 5%;
   right: 40%;
   z-index: 5;
-  width:0%;
-  -webkit-animation: assembly--atomium 1s 3.2s forwards; 
-  animation: assembly--tratomium 1s 2s forwards; 
+  width: 0%;
 }
 
-@-webkit-keyframes assembly--atomium{
-  0% {width:0%;}
-  50% {width:8.5%;}
-  100% {width:8%;}
-}
-
-.img-animation--tree{
+.img-animation--tree {
   bottom: 10%;
   right: 32%;
   z-index: 5;
-  width:0%;
-  -webkit-animation: assembly--tree_1 1s 2.8s forwards; 
-  animation: assembly--tree_1 1s 2s forwards; 
+  width: 0%;
 }
 
-@-webkit-keyframes assembly--tree_1{
-  0% {width:0%;}
-  50% {width:6%;}
-  100% {width:5.05%;}
-}
-
-.img-animation--eiffel_tower{
+.img-animation--eiffel_tower {
   bottom: 8.2%;
   right: 18%;
   z-index: 5;
-  width:0%;
-  -webkit-animation: assembly--eiffel_tower 1 1s 3.1s forwards; 
-  animation: assembly--eiffel_tower 1s 1.5s forwards; 
+  width: 0%;
 }
 
-@-webkit-keyframes assembly--eiffel_tower{
-  0% {width:0%;}
-  50% {width:12%;}
-  100% {width:11.65%;}
-}
-
-.img-animation--tree_2{
+.img-animation--tree_2 {
   bottom: 6%;
   right: 11%;
   z-index: 5;
-  width:0%;
-  -webkit-animation: assembly--tree_2 1s 4s forwards; 
-  animation: assembly--tree_2 1s 2s forwards; 
+  width: 0%;
 }
 
-@-webkit-keyframes assembly--tree_2{
-  0%{width: 0%;}
-  50%{width: 5%;}
-  100%{width: 4.571%;}
-}
-
-.img-animation--tree_3{
+.img-animation--tree_3 {
   bottom: 6%;
   right: 9%;
   z-index: 5;
-  width:0%;
-  -webkit-animation: assembly--tree_3 1s 4s forwards; 
-  animation: assembly--tree_3 1s 2s forwards; 
+  width: 0%;
 }
 
-@-webkit-keyframes assembly--tree_3{
-  0%{width: 0%;}
-  50%{width: 3.5%;}
-  100%{width: 3.125%;}
-}
-
-
-.img-animation--mountain{
+.img-animation--mountain {
   bottom: -30%;
   right: 1%;
   z-index: 4;
-  width:22.018%;
-  transform:rotate(17deg);
-  -webkit-transform:rotate(17deg); 
-
-  -webkit-animation: assembly--mountain 1s 4.5s forwards; /* Chrome, Safari, Opera */
-  animation: assembly--mountain 1s 4.5s forwards;
-
+  width: 22.018%;
+  transform: rotate(17deg);
 }
 
-@-webkit-keyframes assembly--mountain{
-  0% {bottom: -20%;}
-  100% {bottom: 9%;}
-}
-
-.img-animation--ocean_1{
+.img-animation--ocean_1 {
   bottom: -20%;
   left: -2%;
   z-index: 4;
-  width:56.4%;
-  -webkit-animation: ocean--movement 5s 2.5s infinite, ocean--assembly 1s 1.3s;
-  animation: ocean--movement 5s 3s infinite, ocean--assembly 1.3s;
-  -webkit-animation-fill-mode: forwards;
+  width: 56.4%;
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes ocean--movement {
-  0% {left: -2%;top: 93%;}
-  10% {top: 92%;}
-  20% {top: 93%;}
-  30% {top: 92%;}
-  40% {top: 93%;}
-  50% {left: -4%;top: 92%;}
-  60% {top: 93%;}
-  70% {top: 92%;}
-  80% {top: 93%;}
-  90% {top: 92%;}
-  100% {left: -2%;top: 93%;}
-}
-
-@-webkit-keyframes ocean--assembly {
-  0% {bottom: -20%;}
-  100% {bottom: -4%;}
-}
-
-
-/* Standard syntax */
-@keyframes ocean {
- 0% {left: 0;}
- 50% {left: -2%;}
- 100% {left: 0;}
-}
-
-
-.img-animation--ireland{
+.img-animation--ireland {
   bottom: -40%;
   left: 2%;
   z-index: 3;
   width: 24.4%;
-  -webkit-animation: ireland--assembly 1s 2s forwards; 
-  animation: ireland--assembly 1s 2.5s forwards; 
 }
 
-@-webkit-keyframes ireland--assembly {
-  0% {bottom: -40%;}
-  100% {bottom: 2%;}
-}
-
-.img-animation--castle{
-  bottom:9%;
+.img-animation--castle {
+  bottom: 9%;
   left: 7%;
   z-index: 4;
   width: 0%;
-  -webkit-animation: assembly--castle 1s 3.4s forwards; 
-  animation: assembly--castle 1s 2s forwards; 
 }
 
-@-webkit-keyframes assembly--castle{
-  0%{width: 0%;}
-  50%{width: 14%;}
-  100%{width: 13.25%;}
-}
-
-
-.img-animation--ocean_2{
+.img-animation--ocean_2 {
   bottom: -40%;
   left: -2%;
   z-index: 2;
-  width:56.85%;
-  -webkit-animation: ocean2--movement 5s 2.5s infinite, ocean2--assembly 1s 1.5s forwards; 
-  animation:ocean2--movement 5s 2.5s infinite, ocean2--assembly 1s 1.5s forwards; 
+  width: 56.85%;
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes ocean2--movement {
-  0% {left: -2%;bottom: 0;}
-  10% {bottom: 1%;}
-  20% {bottom: 0;}
-  30% {bottom: 1%;}
-  40% {bottom: 0;}
-  50% {left: 0%;bottom: 1%;}
-  60% {bottom: 0;}
-  70% {bottom: 1%;}
-  80% {bottom: 0;}
-  90% {bottom: 1%;}
-  100% {left: -2%;bottom: 0;}
-}
-
-@-webkit-keyframes ocean2--assembly {
-  0% {bottom: -40%;}
-  100% {bottom: 2%;}
-}
-
-.img-animation--england{
+.img-animation--england {
   bottom: -40%;
   left: 25%;
   z-index: 1;
   width: 25%;
-  -webkit-animation: england--assembly 1s 2.2s forwards; 
-  animation: england--assembly 1s 2.2s forwards; 
 }
 
-@-webkit-keyframes england--assembly{
-  0% {bottom: -40%;}
-  100% {bottom: 6%;}
-}
 
-.img-animation--bigben{
+
+.img-animation--bigben {
   bottom: 12%;
   left: 34%;
   z-index: 1;
   width: 0%;
-  -webkit-animation: assembly--bigben 1s 3.3s forwards; 
-  animation: assembly--bigben 1s 2s forwards; 
+
 }
 
-@-webkit-keyframes assembly--bigben{
-  0%{width: 0%;}
-  50%{width: 6.3%;}
-  100%{width: 5.9%;}
-}
 
-.img-animation--balloon{
+.img-animation--balloon {
   bottom: 40%;
   left: 12%;
   z-index: 1;
   width: 7.1%;
   opacity: 0;
-  -webkit-animation: movement--balloon1 30s 4.1s infinite, assembly--balloon1 1s 5.5s forwards; 
-  animation: movement--balloon1 30s 4.1s infinite, assembly--balloon1 1s 5.5s forwards; 
+ 
 }
 
-
-@-webkit-keyframes movement--balloon1 {
-  0% {left: 12%;bottom:48%;}
-  25% {left: 10%;bottom:46%;}
-  50% {left: 12%;bottom:48%;}
-  75% {left: 14%;bottom:46%;}
-}
-
-@-webkit-keyframes assembly--balloon1 {
-  0% {bottom:40%;opacity:0;}
-  100% {bottom: 48%;opacity:1;}
-}
-
-
-
-.img-animation--balloon2{
-  top: 30%;
+.img-animation--balloon2 {
+  bottom: $balloon2-animation-movement-bottom;
   right: 12%;
   z-index: 1;
   width: 8.1%;
   opacity: 0;
-  -webkit-animation: movement--balloon2 30s 4.1s infinite, assembly--balloon2 1s 6s forwards; 
-  animation: movement--balloon2 30s 4.1s infinite, assembly--balloon2 1s 6s forwards; 
-
+ 
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes movement--balloon2 {
-  0% {right: 12%;top:18%;}
-  1% {top:17.8%;}
-
-  3% {top:18%;}
-
-  5% {top:17.6%;}
-
-  7% {top:18%;}
-  9% {top:17.6%;}
-
-  11% {top:18%;}
-
-  13% {top:17.6%;}
-
-  15% {top:18%;}
-
-  17% {top:17.6%;}
-
-  19% {top:18%;}
-
-  21% {top:17.6%;}
-
-  23% {top:18%;}
-
-  25% {top:17.6%;}
-
-  27% {top:18%;}
-  
-  29% {top:17.6%;}
-
-  31% {top:18%;}
-  
-  33% {top:17.6%;}
-
-  35% {top:18%;}
-
-  37% {top:17.6%;}
-
-  39% {top:18%;}
-  
-  41% {top:17.6%;}
-
-  43% {top:18%;}
-  
-  45% {top:17.6%;}
-
-  47% {top:18%;}
-
-  50% {right: 3%;top:17.8%;}
-
-  51% {top:17.8%;}
-
-  53% {top:18%;}
-
-  55% {top:17.6%;}
-
-  57% {top:18%;}
-  59% {top:17.6%;}
-
-  61% {top:18%;}
-
-  63% {top:17.6%;}
-
-  65% {top:18%;}
-
-  67% {top:17.6%;}
-
-  69% {top:18%;}
-
-  71% {top:17.6%;}
-
-  73% {top:18%;}
-
-  75% {top:17.6%;}
-
-  77% {top:18%;}
-  
-  79% {top:17.6%;}
-
-  81% {top:18%;}
-  
-  83% {top:17.6%;}
-
-  85% {top:18%;}
-
-  87% {top:17.6%;}
-
-  89% {top:18%;}
-  
-  91% {top:17.6%;}
-
-  93% {top:18%;}
-
-  95% {top:17.6%;}
-
-  97% {top:18%;}
-
-  100% {right: 12%;top:18%;}
-}
-
-@-webkit-keyframes assembly--balloon2 {
-  0% {top:30%;opacity:0;}
-  100% {top: 18%;opacity:1;}
-}
-
-.text{
+.text {
   position: absolute;
-  top:15%;
-  left:20%;
-  z-index:6;
+  top: 15%;
+  left: 20%;
+  z-index: 6;
 }
 
-.greetings_text{
+.greetings_text {
   font-family: 'Lobster';
   font-size: 134px;
   vertical-align: baseline;
   line-height: 170px;
-  opacity:0;
+  opacity: 0;
   color: white;
-  -webkit-animation: assembly--greetings_text 1s 4.3s forwards; 
-  animation: assembly--greetings_text 1s 4.3s forwards; 
+ 
 }
 
-@-webkit-keyframes assembly--greetings_text{
-  0% {opacity:0;}
-  100%{opacity:1;}
-}
-
-.greetings_text span{
+.greetings_text span {
   display: block;
   float: left;
-  position:relative;
+  position: relative;
   text-align: center;
 }
 
-.name_text{
+.name_text {
   font-family: "Helvetica";
   font-weight: 800;
   font-size: 64px;
   line-height: 64px;
-  float:right;
-  opacity:0;
-  -webkit-animation: assembly--name_text 1s 4.33s forwards; 
-  animation: assembly--name_text 1s 4.33s forwards; 
+  float: right;
+  opacity: 0;
 }
 
-@-webkit-keyframes assembly--name_text{
-  0% {opacity:0;}
-  100%{opacity:1;}
-}
-
-.name_text span{
-  color: #EF504F;
-  text-shadow: 0 2px #A33736;
+.name_text span {
+  color: $red-name-medium;
+  text-shadow: 0 2px $red-name-dark;
   display: block;
   float: left;
-  position:relative;
+  position: relative;
   text-align: center;
-  margin:0;
+  margin: 0;
 }
 
-
-.greetings_text-letter{
-}
-
-
-
+@import url(animation.css);
+ 
