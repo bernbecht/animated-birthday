@@ -1,6 +1,6 @@
-@import 'components/colors';
-@import 'components/animation_variables';
-@import 'components/normalize';
+@import 'components/_colors';
+@import 'components/_animation_variables';
+@import 'components/_normalize';
 
 
 @import url(http://fonts.googleapis.com/css?family=Dosis|Lobster);
@@ -144,7 +144,7 @@ body {
 }
 
 .img-animation--balloon2 {
-  bottom: $balloon2-animation-movement-bottom;
+  bottom: $balloon2-animation-assembly-bottom;
   right: 12%;
   z-index: 1;
   width: 8.1%;

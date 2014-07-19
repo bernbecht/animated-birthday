@@ -1265,29 +1265,35 @@ body {
   }
 }
 .img-animation--balloon {
-  -webkit-animation: movement--balloon1 30s 4.1s infinite, assembly--balloon1 1s 5.5s forwards;
-  animation: movement--balloon1 30s 4.1s infinite, assembly--balloon1 1s 5.5s forwards;
+  -webkit-animation: movement--horizontal--balloon1 5s 6.7s alternate infinite, assembly--balloon1 1s 5.3s forwards, movement--vertical--balloon1 3s ease-in 6.7s infinite;
 }
 
-@-webkit-keyframes movement--balloon1 {
+@-webkit-keyframes movement--horizontal--balloon1 {
   0% {
-    left: 12%;
-    bottom: 48%;
-  }
-
-  25% {
-    left: 10%;
-    bottom: 46%;
+    -webkit-transform: translateX(0%) translateY(0%);
+    transform: translateX(0%) translateY(0%);
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
 
   50% {
-    left: 12%;
-    bottom: 48%;
+    -webkit-transform: translateX(20%) translateY(-10%);
+    transform: translateX(20%) translateY(-10%);
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 
-  75% {
-    left: 14%;
-    bottom: 46%;
+  100% {
+    -webkit-transform: translateX(40%) translateY(0%);
+    transform: translateX(40%) translateY(0%);
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
 }
 @-webkit-keyframes assembly--balloon1 {
@@ -1321,7 +1327,7 @@ body {
   }
 
   5% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   7% {
@@ -1329,7 +1335,7 @@ body {
   }
 
   9% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   11% {
@@ -1337,7 +1343,7 @@ body {
   }
 
   13% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   15% {
@@ -1345,7 +1351,7 @@ body {
   }
 
   17% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   19% {
@@ -1353,7 +1359,7 @@ body {
   }
 
   21% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   23% {
@@ -1361,7 +1367,7 @@ body {
   }
 
   25% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   27% {
@@ -1369,7 +1375,7 @@ body {
   }
 
   29% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   31% {
@@ -1377,7 +1383,7 @@ body {
   }
 
   33% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   35% {
@@ -1385,7 +1391,7 @@ body {
   }
 
   37% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   39% {
@@ -1393,7 +1399,7 @@ body {
   }
 
   41% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   43% {
@@ -1401,7 +1407,7 @@ body {
   }
 
   45% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   47% {
@@ -1422,7 +1428,7 @@ body {
   }
 
   55% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   57% {
@@ -1430,7 +1436,7 @@ body {
   }
 
   59% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   61% {
@@ -1438,7 +1444,7 @@ body {
   }
 
   63% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   65% {
@@ -1446,7 +1452,7 @@ body {
   }
 
   67% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   69% {
@@ -1454,7 +1460,7 @@ body {
   }
 
   71% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   73% {
@@ -1462,7 +1468,7 @@ body {
   }
 
   75% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   77% {
@@ -1470,7 +1476,7 @@ body {
   }
 
   79% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   81% {
@@ -1478,7 +1484,7 @@ body {
   }
 
   83% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   85% {
@@ -1486,7 +1492,7 @@ body {
   }
 
   87% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   89% {
@@ -1494,7 +1500,7 @@ body {
   }
 
   91% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   93% {
@@ -1502,7 +1508,7 @@ body {
   }
 
   95% {
-    top: 17.6%;
+    top: 17.8%;
   }
 
   97% {

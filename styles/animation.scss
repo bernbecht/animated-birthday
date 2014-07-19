@@ -1,5 +1,5 @@
-@import 'components/colors';
-@import 'components/animation_variables';
+@import 'components/_colors';
+@import 'components/_animation_variables';
 
 
 
@@ -354,40 +354,40 @@
 }
 
 .img-animation--balloon {
-  -webkit-animation: movement--balloon1 30s 4.1s infinite, assembly--balloon1 1s $balloon-animation-assembly-delay forwards;
-  animation: movement--balloon1 30s 4.1s infinite, assembly--balloon1 1s 5.5s forwards;
+  -webkit-animation: movement--horizontal--balloon1 5s $balloon-animation-movement-delay alternate infinite, 
+  assembly--balloon1 1s $balloon-animation-assembly-delay forwards,
+  movement--vertical--balloon1 3s ease-in $balloon-animation-movement-delay infinite;
 }
 
-@-webkit-keyframes movement--balloon1 {
-  0% {
-    left: 12%;
-    bottom: 48%;
-  }
-
-  25% {
-    left: 10%;
-    bottom: 46%;
+@-webkit-keyframes movement--horizontal--balloon1 {
+ 0% {
+    transform: translateX(0%) translateY(0%);
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
   }
 
   50% {
-    left: 12%;
-    bottom: 48%;
+    transform: translateX(20%) translateY(-10%);
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
   }
 
-  75% {
-    left: 14%;
-    bottom: 46%;
+  100% {
+    transform: translateX(40%) translateY(0%);
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
   }
+
 }
 
 @-webkit-keyframes assembly--balloon1 {
   0% {
-    bottom: 40%;
+    bottom: $balloon-animation-assembly-bottom;
     opacity: 0;
   }
 
   100% {
-    bottom: 48%;
+    bottom: $balloon-animation-assembly-bottom--up;
     opacity: 1;
   }
 }
@@ -399,221 +399,221 @@
 
 @-webkit-keyframes movement--balloon2 {
   0% {
-    right: 12%;
-    top: 18%;
+    right: $balloon2-animation-movement-right;
+    top: $balloon2-animation-movement-top;
   }
 
   1% {
-    top: 17.8%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   3% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   5% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   7% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   9% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   11% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   13% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   15% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   17% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   19% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   21% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   23% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   25% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   27% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   29% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   31% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   33% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   35% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   37% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   39% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   41% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   43% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   45% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   47% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   50% {
-    right: 3%;
-    top: 17.8%;
+    right: $balloon2-animation-movement-right--final;
+    top: $balloon2-animation-movement-top--up;
   }
 
   51% {
-    top: 17.8%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   53% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   55% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   57% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   59% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   61% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   63% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   65% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   67% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   69% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   71% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   73% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   75% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   77% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   79% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   81% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   83% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   85% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   87% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   89% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   91% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   93% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   95% {
-    top: 17.6%;
+    top: $balloon2-animation-movement-top--up;
   }
 
   97% {
-    top: 18%;
+    top: $balloon2-animation-movement-top;
   }
 
   100% {
-    right: 12%;
-    top: 18%;
+    right: $balloon2-animation-movement-right;
+    top: $balloon2-animation-movement-top;
   }
 }
 
 @-webkit-keyframes assembly--balloon2 {
   0% {
-    bottom: $balloon2-animation-movement-bottom;
+    bottom: $balloon2-animation-assembly-bottom;
     opacity: 0;
   }
 
   100% {
-    bottom: $balloon2-animation-movement-bottom--up;
+    bottom: $balloon2-animation-assembly-bottom--up;
     opacity: 1;
   }
 }
