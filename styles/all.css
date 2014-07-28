@@ -888,44 +888,52 @@ body {
   opacity: 0;
 }
 
-.text {
+.textContainer {
   position: absolute;
-  top: 15%;
-  left: 20%;
-  z-index: 6;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  /*
+  Nope =(
+  margin-left: -25%;
+  margin-top: -25%;
+  */
+  /* 
+  Yep!
+  */
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .greetings_text {
   font-family: 'Lobster';
-  font-size: 134px;
+  font-size: 8vw;
   vertical-align: baseline;
-  line-height: 170px;
   opacity: 0;
   color: white;
+  display: inline-block;
 }
 
-.greetings_text span {
+.greetings_text-letter {
   display: block;
   float: left;
-  position: relative;
   text-align: center;
 }
 
 .name_text {
   font-family: "Helvetica";
   font-weight: 800;
-  font-size: 64px;
-  line-height: 64px;
-  float: right;
+  font-size: 4vw;
   opacity: 0;
+  display: inline-block;
+  float: right;
 }
 
-.name_text span {
+.name_text-letter {
   color: #ef504f;
   text-shadow: 0 2px #a33736;
   display: block;
   float: left;
-  position: relative;
   text-align: center;
   margin: 0;
 }
@@ -1532,7 +1540,7 @@ body {
   }
 }
 .greetings_text {
-  -webkit-animation: assembly--greetings_text 1s 4.3s forwards;
+  -webkit-animation: assembly--greetings_text 1s 0s forwards;
   animation: assembly--greetings_text 1s 4.3s forwards;
 }
 
@@ -1546,7 +1554,7 @@ body {
   }
 }
 .name_text {
-  -webkit-animation: assembly--name_text 1s 4.33s forwards;
+  -webkit-animation: assembly--name_text 1s 0s forwards;
   animation: assembly--name_text 1s 4.33s forwards;
 }
 

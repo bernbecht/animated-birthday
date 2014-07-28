@@ -1,7 +1,9 @@
-$( document ).ready(function() {
-// alert("ready");
+
+
+$(document ).ready(function() {
+	resizeText();
 });
 
 $(window).load(function() {
-  $(".load_screen").fadeOut("slow");
+	$(".load_screen").fadeOut("slow");
 })

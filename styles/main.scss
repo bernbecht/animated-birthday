@@ -140,7 +140,7 @@ body {
   z-index: 1;
   width: 7.1%;
   opacity: 0;
- 
+
 }
 
 .img-animation--balloon2 {
@@ -149,51 +149,67 @@ body {
   z-index: 1;
   width: 8.1%;
   opacity: 0;
- 
+
 }
 
 .text {
+  // position: relative;
+  // z-index: 6;
+  // margin: 0 auto;
+  // max-width: 900px;
+  // width:100%;
+  // height:100%;
+}
+
+.textContainer{
   position: absolute;
-  top: 15%;
-  left: 20%;
-  z-index: 6;
+    position: absolute;
+  left: 50%;
+  top: 30%;
+  
+  /*
+  Nope =(
+  margin-left: -25%;
+  margin-top: -25%;
+  */
+
+  /* 
+  Yep!
+  */
+  transform: translate(-50%, -50%);
 }
 
 .greetings_text {
   font-family: 'Lobster';
-  font-size: 134px;
+  font-size: 8vw;
   vertical-align: baseline;
-  line-height: 170px;
   opacity: 0;
   color: white;
- 
+  display:inline-block; 
 }
 
-.greetings_text span {
+.greetings_text-letter {
   display: block;
   float: left;
-  position: relative;
   text-align: center;
 }
 
 .name_text {
   font-family: "Helvetica";
   font-weight: 800;
-  font-size: 64px;
-  line-height: 64px;
-  float: right;
+  font-size: 4vw;
   opacity: 0;
+  display:inline-block; 
+  float: right;
 }
 
-.name_text span {
+.name_text-letter {
   color: $red-name-medium;
   text-shadow: 0 2px $red-name-dark;
   display: block;
   float: left;
-  position: relative;
   text-align: center;
   margin: 0;
 }
 
 
- 
