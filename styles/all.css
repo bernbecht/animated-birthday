@@ -1540,7 +1540,7 @@ body {
   }
 }
 .greetings_text {
-  -webkit-animation: assembly--greetings_text 1s 0s forwards;
+  -webkit-animation: assembly--greetings_text 1s 4.3s forwards;
   animation: assembly--greetings_text 1s 4.3s forwards;
 }
 
@@ -1554,7 +1554,7 @@ body {
   }
 }
 .name_text {
-  -webkit-animation: assembly--name_text 1s 0s forwards;
+  -webkit-animation: assembly--name_text 1s 4.33s forwards;
   animation: assembly--name_text 1s 4.33s forwards;
 }
 

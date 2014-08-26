@@ -616,8 +616,8 @@
 }
 
 .greetings_text {
-  -webkit-animation: assembly--greetings_text 1s 0s forwards;
-  animation: assembly--greetings_text 1s 4.3s forwards;
+  -webkit-animation: assembly--greetings_text 1s $greetingsText-timeFadeIn forwards;
+  animation: assembly--greetings_text 1s $greetingsText-timeFadeIn forwards;
 }
 
 @-webkit-keyframes assembly--greetings_text {
@@ -631,8 +631,8 @@
 }
 
 .name_text {
-  -webkit-animation: assembly--name_text 1s 0s forwards;
-  animation: assembly--name_text 1s 4.33s forwards;
+  -webkit-animation: assembly--name_text 1s $nameText-timeFadeIn forwards;
+  animation: assembly--name_text 1s $nameText-timeFadeIn forwards;
 }
 
 @-webkit-keyframes assembly--name_text {
