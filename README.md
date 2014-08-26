@@ -5,6 +5,6 @@ A birthday card for a lovelly 22-year-old person in order to make her pleased an
 
 ## Illustrations
 
-All the illustrations here were made by me, but get a spoon and have dinner with me. Use them as you whish. 
+All the illustrations here were made by me, but get a spoon and have dinner with me. Use them as you wish. 
 
 
